@@ -1,32 +1,46 @@
-'use client'
+"use client";
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 interface Experience {
-  title: string
-  company: string
-  period: string
-  description: string
-  skills: string[]
+  title: string;
+  company: string;
+  period: string;
+  description: string;
+  skills: string[];
 }
 
 const experiences: Experience[] = [
   {
-    title: 'Intern - Data Analytics',
-    company: 'Elevvo Pathways',
-    period: '6 Months (Current)',
-    description: 'Working on data analysis and visualization projects. Developing SQL queries to extract and analyze organizational data. Creating Power BI dashboards and reports to support data-driven decision making. Performing statistical analysis on datasets and translating insights into actionable recommendations.',
-    skills: ['SQL', 'Power BI', 'Data Analysis', 'Python', 'Excel'],
+    title: "Intern - Data Analytics",
+    company: "Elevvo Pathways",
+    period: "1 Month ",
+    description:
+      "Working on data analysis and visualization projects. Developing SQL queries to extract and analyze organizational data. Creating Power BI dashboards and reports to support data-driven decision making. Performing statistical analysis on datasets and translating insights into actionable recommendations.",
+    skills: ["SQL", "Power BI", "Data Analysis", "Python", "Excel"],
   },
   {
-    title: 'Personal Projects Developer',
-    company: 'GitHub Portfolio',
-    period: 'Ongoing',
-    description: 'Building and maintaining multiple data analysis and web development projects on GitHub. Creating end-to-end solutions from data collection to visualization. Implementing best practices in code organization, documentation, and version control. Contributing to open-source projects and continuously learning new technologies.',
-    skills: ['GitHub', 'Python', 'JavaScript', 'Data Analysis', 'Version Control'],
+    title: "Personal Projects Developer",
+    company: "GitHub Portfolio",
+    period: "Ongoing",
+    description:
+      "Building and maintaining multiple data analysis and web development projects on GitHub. Creating end-to-end solutions from data collection to visualization. Implementing best practices in code organization, documentation, and version control. Contributing to open-source projects and continuously learning new technologies.",
+    skills: [
+      "GitHub",
+      "Python",
+      "JavaScript",
+      "Data Analysis",
+      "Version Control",
+    ],
   },
-]
+];
 
 export default function Experience() {
   return (
@@ -46,9 +60,13 @@ export default function Experience() {
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 md:gap-0">
                   <div>
                     <CardTitle className="text-2xl">{exp.title}</CardTitle>
-                    <CardDescription className="text-base">{exp.company}</CardDescription>
+                    <CardDescription className="text-base">
+                      {exp.company}
+                    </CardDescription>
                   </div>
-                  <span className="text-sm font-semibold text-primary whitespace-nowrap">{exp.period}</span>
+                  <span className="text-sm font-semibold text-primary whitespace-nowrap">
+                    {exp.period}
+                  </span>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -66,5 +84,5 @@ export default function Experience() {
         </div>
       </div>
     </section>
-  )
+  );
 }
