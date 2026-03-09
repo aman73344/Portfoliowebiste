@@ -1,56 +1,68 @@
-'use client'
+"use client";
 
-import { ExternalLink } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
+import { ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 interface Project {
-  id: string
-  title: string
-  description: string
-  technologies: string[]
-  link?: string
-  isComingSoon?: boolean
+  id: string;
+  title: string;
+  description: string;
+  technologies: string[];
+  link?: string;
+  isComingSoon?: boolean;
 }
 
 const projects: Project[] = [
   {
-    id: 'globeassist',
-    title: 'Globeassist (FYP)',
-    description: 'Final Year Project - A comprehensive application for global assistance.',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
-    link: 'https://globe-assist.vercel.app/',
+    id: "globeassist",
+    title: "Globeassist (FYP)",
+    description:
+      "Final Year Project - A comprehensive application for global assistance.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    link: "https://globe-assist.vercel.app/",
   },
   {
-    id: 'smog-detection',
-    title: 'Smog Detection & Classification',
-    description: 'Deep learning model for detecting and classifying smog levels using computer vision.',
-    technologies: ['Deep Learning', 'Python', 'TensorFlow', 'OpenCV'],
-    link: 'https://github.com/aman73344/Deep-learning-Smog-detection-',
+    id: "smog-detection",
+    title: "Smog Detection & Classification",
+    description:
+      "Deep learning model for detecting and classifying smog levels using computer vision.",
+    technologies: ["Deep Learning", "Python", "TensorFlow", "OpenCV"],
+    link: "https://github.com/aman73344/Deep-learning-Smog-detection-",
   },
   {
-    id: 'retail-data',
-    title: 'Online Retail Data Cleaning & Analysis',
-    description: 'Data preprocessing and analysis project for e-commerce retail datasets.',
-    technologies: ['Python', 'Pandas', 'Data Analysis', 'SQL'],
-    link: 'https://github.com/aman73344/Online-Retail-Data-Cleaning-and-Analysis',
+    id: "retail-data",
+    title: "Online Retail Data Cleaning & Analysis",
+    description:
+      "Data preprocessing and analysis project for e-commerce retail datasets.",
+    technologies: ["Python", "Pandas", "Data Analysis", "SQL"],
+    link: "https://github.com/aman73344/Online-Retail-Data-Cleaning-and-Analysis",
   },
   {
-    id: 'titanic',
-    title: 'Titanic Data Preprocessing',
-    description: 'Comprehensive data preprocessing and handling of missing values in the Titanic dataset.',
-    technologies: ['Python', 'Pandas', 'NumPy', 'Data Science'],
-    link: 'https://github.com/aman73344/Titanic-Data-Preprocessing-Handling-Missing-Values',
+    id: "titanic",
+    title: "Titanic Data Preprocessing",
+    description:
+      "Comprehensive data preprocessing and handling of missing values in the Titanic dataset.",
+    technologies: ["Python", "Pandas", "NumPy", "Data Science"],
+    link: "https://github.com/aman73344/Titanic-Data-Preprocessing-Handling-Missing-Values",
   },
   {
-    id: 'bi-dashboard',
-    title: 'Business Intelligence Dashboard – Sales & Customer Insights',
-    description: 'Advanced dashboard for analyzing sales trends and customer behavior patterns.',
-    technologies: ['Power BI', 'SQL', 'Analytics', 'Data Visualization'],
-    isComingSoon: true,
+    id: "bi-dashboard",
+    title: "Supermarket Sales Analysis Dashboard",
+    description:
+      "Interactive Power BI dashboard for analyzing sales trends, profits, and customer behavior.",
+    technologies: ["Power BI", "SQL", "Analytics", "Data Visualization"],
+    link: "https://app.powerbi.com/view?r=eyJrIjoiYmJlMjYyYTgtYTNlMC00OTliLWEzNDUtZDI0ZDAzNzA0NzhiIiwidCI6IjEyYjIyMWIzLTA0NjQtNDIyMy04OWU1LTg4ODgzNTc3OGI1OCIsImMiOjl9",
+    isComingSoon: false,
   },
-]
+];
 
 export default function Projects() {
   return (
@@ -59,7 +71,8 @@ export default function Projects() {
         <div className="mb-12">
           <h2 className="text-4xl font-bold mb-4">Projects</h2>
           <p className="text-lg text-muted-foreground">
-            A collection of my recent projects showcasing my skills and experience
+            A collection of my recent projects showcasing my skills and
+            experience
           </p>
         </div>
 
@@ -70,7 +83,7 @@ export default function Projects() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 function ProjectCard({ project }: { project: Project }) {
@@ -110,5 +123,5 @@ function ProjectCard({ project }: { project: Project }) {
         )}
       </CardContent>
     </Card>
-  )
+  );
 }
