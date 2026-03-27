@@ -1,12 +1,12 @@
-'use client'
+"use client";
 
-import Navbar from '@/components/navbar'
-import Hero from '@/components/hero'
-import Projects from '@/components/projects'
-import Skills from '@/components/skills'
-import Experience from '@/components/experience'
-import Education from '@/components/education'
-import Footer from '@/components/footer'
+import Navbar from "@/components/navbar";
+import Hero from "@/components/hero";
+import Projects from "@/components/projects";
+import Skills from "@/components/skills";
+import Experience from "@/components/experience";
+import Education from "@/components/education";
+import Footer from "@/components/footer";
 
 export default function Page() {
   return (
@@ -21,5 +21,5 @@ export default function Page() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }

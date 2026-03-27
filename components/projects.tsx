@@ -62,6 +62,21 @@ const projects: Project[] = [
     link: "https://app.powerbi.com/view?r=eyJrIjoiYmJlMjYyYTgtYTNlMC00OTliLWEzNDUtZDI0ZDAzNzA0NzhiIiwidCI6IjEyYjIyMWIzLTA0NjQtNDIyMy04OWU1LTg4ODgzNTc3OGI1OCIsImMiOjl9",
     isComingSoon: false,
   },
+  {
+    id: "heroix-ai",
+    title: "Heroix AI Ecommerce Assistant",
+    description:
+      "AI-powered ecommerce web app with intelligent chatbot for product recommendations, browsing, and conversational shopping experience.",
+    technologies: [
+      "Next.js",
+      "AI Chatbot",
+      "OpenRouter",
+      "PostgreSQL",
+      "Full-Stack",
+    ],
+    link: "https://heroixweb-hvc2.vercel.app/",
+    isComingSoon: false,
+  },
 ];
 
 export default function Projects() {
