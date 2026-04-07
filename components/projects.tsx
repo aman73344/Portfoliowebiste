@@ -74,7 +74,7 @@ const projects: Project[] = [
       "PostgreSQL",
       "Full-Stack",
     ],
-    link: "https://heroixweb-hvc2.vercel.app/",
+    link: "https://heroixweb.vercel.app/",
     isComingSoon: false,
   },
 ];
