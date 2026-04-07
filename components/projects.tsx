@@ -64,15 +64,14 @@ const projects: Project[] = [
   },
   {
     id: "heroix-ai",
-    title: "Heroix AI Ecommerce Assistant",
+    title: "HEROIX",
     description:
-      "AI-powered ecommerce web app with intelligent chatbot for product recommendations, browsing, and conversational shopping experience.",
+      "An AI-powered e-commerce platform for keychains featuring a conversational chatbot that guides users through product discovery, NLP-powered order processing with smart quantity detection, and a full admin panel — all wrapped in a sleek dark/light UI.",
     technologies: [
       "Next.js",
-      "AI Chatbot",
-      "OpenRouter",
       "PostgreSQL",
-      "Full-Stack",
+      "REST API",
+      "LLMs",
     ],
     link: "https://heroixweb.vercel.app/",
     isComingSoon: false,
