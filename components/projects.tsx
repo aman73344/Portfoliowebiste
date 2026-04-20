@@ -67,13 +67,23 @@ const projects: Project[] = [
     title: "HEROIX",
     description:
       "An AI-powered e-commerce platform for keychains featuring a conversational chatbot that guides users through product discovery, NLP-powered order processing with smart quantity detection, and a full admin panel — all wrapped in a sleek dark/light UI.",
+    technologies: ["Next.js", "PostgreSQL", "REST API", "LLMs"],
+    link: "https://heroixweb.vercel.app/",
+    isComingSoon: false,
+  },
+  {
+    id: "bizai",
+    title: "BizAI",
+    description:
+      "An AI-powered POS and inventory management platform for small businesses featuring real-time sales tracking, KPI dashboards, smart reorder alerts, and AI-driven business insights with natural language queries — all in a responsive dark/light UI.",
     technologies: [
       "Next.js",
-      "PostgreSQL",
-      "REST API",
-      "LLMs",
+      "Neon PostgreSQL",
+      "Drizzle ORM",
+      "OpenRouter AI",
+      "Tailwind CSS",
     ],
-    link: "https://heroixweb.vercel.app/",
+    link: "https://bizai-fawn.vercel.app/dashboard",
     isComingSoon: false,
   },
 ];
